@@ -18,8 +18,8 @@ namespace WorkWithCsharp
             if (crmSvc.IsReady)
             {
                 WhoAmIRequest req = new WhoAmIRequest();
-                WhoAmIResponse res= (WhoAmIResponse)crmSvc.Execute(req);
-                Console.WriteLine("UserID:"+res.UserId);
+                WhoAmIResponse res = (WhoAmIResponse)crmSvc.Execute(req);
+                Console.WriteLine("UserID:" + res.UserId);
             }
 
             Lead lead = new Lead();
